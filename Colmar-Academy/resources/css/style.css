@@ -1,0 +1,504 @@
+/* --- general settings ---*/
+html{
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 16px;
+  color:rgb(79, 79, 79);
+  line-height: 1.4;
+}
+
+body{
+  display: block;
+  background-color: rgb(255,255,255);
+  margin: 0;
+}
+
+/* --- header section---*/
+header {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  align-items: center;
+}
+
+header a{
+  color: rgb(79, 79, 79);
+  text-decoration: none;
+}
+
+header a:hover{
+  color: rgb(91,155,213);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 24px;
+}
+
+.logo img{
+  width: auto;
+  height: 32px;
+  margin-right: 10px;
+}
+
+h1{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.logo span{
+  color: rgb(210, 210, 210);
+  font-weight: 400;
+}
+
+nav{
+  display: block;
+  text-align: right;
+  flex-grow: 1;
+  margin-right: 24px;
+}
+
+nav span{
+  display: inline-flex;
+  padding-right: 8px;
+  font-size: 20px;
+}
+
+.m-head{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+/* ---  banner section----*/
+.bigbanner{
+  width: 100%;
+  background-color: rgb(213, 213, 213);
+  display: flex;
+}
+/*-- banner left side---*/
+.bigbanner .banner-image{
+  width: 60%;
+  display: block;
+  height: auto;
+  padding: 32px 24px;
+}
+
+.bigbanner .banner-image img{
+  width: 100%;
+  height: auto;
+}
+/*-- banner right side---*/
+.bigbanner .banner-logon{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 24px;
+}
+
+.bigbanner .banner-logon h2{
+  display: flex;
+  width: 90%;
+  font-size: 48px;
+  padding-bottom: 24px;
+  font-weight: bold;
+}
+
+.bigbanner .banner-logon h3{
+  display: flex;
+  width: 90%;
+  font-size: 30px;
+  padding-bottom: 24px;
+}
+
+.bigbanner .banner-logon button{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  padding: 8px 0;
+  font-size: 24px;
+  background-color: rgb(79, 79, 79);
+}
+
+.bigbanner .banner-logon button a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.bigbanner .banner-logon button:hover{
+  background-color: rgb(91,155,213);
+  font-weight: 700;
+}
+/*-- Information section--- */
+.biginfo{
+  padding: 0 24px;
+  display: flex;
+}
+/*-- Information left panel -- */
+.biginfo .info-image{
+  width: 60%;
+  height: auto;
+  opacity: 1;
+  padding: 32px 24px 32px 0;
+  border-right: 1px solid rgb(175, 175, 175);
+}
+
+.biginfo .info-image img{
+  width: 100%;
+  height: auto;
+}
+
+.biginfo .info-image_text{
+  padding: 32px 24px 0 0;
+}
+
+.biginfo .info-image_text h2{
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.biginfo .info-image_text h3{
+  color: rgb(150, 150, 150);
+  padding-bottom: 24px;
+}
+
+/*-- Information right panel--*/
+.biginfo .info-items{
+  padding-top: 16px;
+  width: 40%;
+  opacity: 1;
+}
+
+.biginfo .info-items .i-item{
+  width: 100%;
+  display: flex;
+  padding: 16px 0 16px 16px;
+  justify-content:flex-start;
+  height: auto;
+  border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.biginfo .info-items .i-item .i-item-image{
+  display: block;
+  width: 35%;
+  height: auto;
+  padding-right: 16px;
+}
+
+.biginfo .info-items .i-item .i-item-image img{
+  display: block;
+  width:100%;
+}
+
+.biginfo .info-items .i-item .i-item-text{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.biginfo .info-items .i-item .i-item-text h4{
+  font-size: 28px;
+}
+
+.biginfo .info-items .i-item .i-item-text p{
+  font-size: 18px;
+  color: rgb(100, 100, 100);
+  padding: 8px 0;
+}
+
+.biginfo .info-items .i-item .i-item-text a{
+  color: rgb(91,155,213);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.biginfo .info-items .i-item .i-item-text a:hover{
+  color: rgb(91,155,231);
+  text-decoration: underline;
+  font-size: 22px;
+}
+/*-- change backgroud of last item*/
+#lastitem{
+  background-color: rgb(213, 213, 213);
+}
+/* --- Start learning -- */
+.big-learning{
+  display: block;
+  width: auto;
+  background-color: rgb(235, 235, 235);
+}
+
+.big-learning h2{
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 32px 0;
+  justify-content: center;
+  align-content: center;
+}
+
+.big-learning .learning-items{
+  padding: 0 72px 32px 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-learning .learning-items .learn-item{
+  width: 32%;
+  background-color: white;
+}
+
+.big-learning .learning-items .learn-item img{
+  width: 100%;
+}
+
+.learn-item .learn-item-text{
+  padding: 16px 24px 24px 16px;
+}
+
+.learn-item .learn-item-text h4{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.learn-item .learn-item-text p{
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+#course {
+  text-transform: uppercase;
+}
+/*--- Thesis exhibit---*/
+.big-thesis{
+  display: block;
+  width: 100%;
+}
+
+.big-thesis h2{
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 32px 0 16px 0;
+  justify-content: center;
+}
+
+.big-thesis-content{
+  display: flex;
+}
+
+.big-thesis-content .thesis-video{
+  width: 60%;
+  height: auto;
+  padding: 16px 24px 0 24px;
+}
+
+.big-thesis-content .thesis-video video{
+  width: 100%;
+  height: auto;
+}
+
+.thesis-video .thesis-video-txt{
+  padding: 24px 24px 0 0;
+}
+
+.thesis-video .thesis-video-txt h2{
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.thesis-video .thesis-video-txt h3{
+  color: rgb(150, 150, 150);
+  padding-bottom: 32px;
+}
+/*-- thesis right panel---*/
+.big-thesis-cright{
+  width: 40%;
+}
+
+.thesis-items{
+  display: block;
+  padding-top: 16px;
+}
+
+.thesis-items .i-item{
+  display: flex;
+  flex-flow: row;
+  padding: 16px;
+  justify-content:flex-start;
+  height: auto;
+}
+
+.i-item .i-item-image{
+  display: block;
+  width: 35%;
+  height: auto;
+  padding-right: 16px;
+}
+
+.i-item-image img{
+  display: block;
+  width:100%;
+}
+
+ .i-item .i-item-text{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.i-item .i-item-text h4{
+  font-size: 28px;
+}
+
+.i-item .i-item-text p{
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+  padding: 8px 0;
+}
+
+#firstitem{
+  background-color: rgb(213, 213, 213);
+}
+/*--Footer --*/
+footer{
+  display: flex;
+  padding: 16px 24px;
+  justify-content: space-between;
+}
+
+.footer-nav a{
+  color:rgb(79, 79, 79);
+  text-decoration: none;
+}
+
+.footer-nav a:hover{
+  color: rgb(91,155,213);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/*--- media tyoe selcetion  ----*/
+
+@media only screen and (min-width: 768px){
+  #mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px){
+#desktop{
+  display: none;
+}
+/*--- banner on mobile----*/
+.bigbanner{
+  display: block;
+}
+
+.bigbanner .banner-image{
+  width: auto;
+  padding: 0;
+}
+
+.bigbanner .banner-logon{
+  width: auto;
+  padding: 32px 16px;
+}
+
+.bigbanner .banner-logon h2{
+  width: auto;
+  padding-bottom: 32px;
+}
+
+.bigbanner .banner-logon h3{
+  width: auto;
+  padding-bottom: 24px;
+}
+
+.bigbanner .banner-logon button{
+  width: 98%;
+  display: flex;
+  align-items: center;
+}
+/*-- information section on mobile--*/
+.biginfo{
+  display: block;
+  width: auto;
+  padding: 16;
+}
+
+.biginfo .info-items{
+  display: block;
+  width:auto;
+  padding: 0;
+}
+
+.biginfo .info-items .i-item{
+  display: block;
+  width: auto;
+  padding: 32px 0;
+}
+
+.biginfo .info-items .i-item .i-item-image{
+  display: block;
+  width: auto;
+  padding: 0;
+}
+
+.biginfo .info-items .i-item .i-item-image img{
+  display: block;
+  width:100%;
+}
+
+.biginfo .info-items .i-item .i-item-text{
+  display: block;
+  width: auto;
+  padding: 0;
+}
+/*-- learning section on mobile---*/
+.s-learning-items{
+  width: auto;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  padding:0 16px 24px 16px;
+}
+
+.s-learning-items h4{
+  background-color: rgb(213, 213, 213);
+  font-size: 24px;
+  font-weight: 500;
+  padding:16px 16px 24px 16px;
+  display: flex;
+  align-content: center;
+  margin-bottom: 8px;
+}
+
+.s-learning-items h2{
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 32px 0 16px 0;
+  justify-content: center;
+}
+/*--- thesis section on mobile----*/
+.big-thesis-content .thesis-video{
+  width: auto;
+}
+}
